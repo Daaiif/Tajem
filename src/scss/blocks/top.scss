@@ -1,0 +1,17 @@
+.top {
+    padding-top: 15px;
+    padding-bottom: 70px;
+    background: url('../img/bg1.jpg') top center no-repeat;
+    background-size: cover;
+
+    .top-wrap {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .top-menu {
+        flex-basis: 55%;
+    }
+}

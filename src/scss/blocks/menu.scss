@@ -1,0 +1,24 @@
+.menu {
+    ul {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    
+    a {
+        font-size: 13px;
+        line-height: 20px;
+        letter-spacing: .32px;
+        font-weight: 900;
+        color: $white;
+        text-decoration: none;
+        text-transform: uppercase;
+        margin: 0 3px;
+        transition-duration: 500ms;
+        transition-property: color;
+
+        &:hover {
+            color: #00e0d0;
+        }
+    }
+}
