@@ -1,0 +1,54 @@
+.slider {
+    margin-top: 150px;
+    .slider-item {
+        text-align: center;   
+    }
+
+    p {
+        max-width: 770px;
+        margin: 15px auto;
+        color: $white;
+        font-size: 14px;
+        line-height: 24px;
+        letter-spacing: .7px;
+        font-weight: 300;
+    }
+
+    .slider-title {
+        font-weight: 900;
+        font-size: 32px;
+        font-family: 'Playfair Display';
+        letter-spacing: .32px;
+    }
+
+    .divider {
+        @include divider();
+    }
+
+    a {
+        @include btn() {
+            margin-top: 35px;
+        };
+    }
+
+    .owl-dots {
+        margin-top: 125px;
+        text-align: center;
+
+        .owl-dot {
+            width: 10px;
+            height: 10px;
+            border: 1px solid $white;
+            border-radius: 50%;
+            margin: 0 2px;
+            outline: none;
+        }
+        .owl-dot.active {
+            background-color: $turquoise;
+            border-color: $turquoise;
+        }
+    }
+
+    
+    
+}

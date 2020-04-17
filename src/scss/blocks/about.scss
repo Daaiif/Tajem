@@ -1,0 +1,41 @@
+.about {
+    margin: 70px auto;
+
+
+    .about-block {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+    }
+    
+    .about-img {
+        flex-basis: 44%;
+        text-align: center;
+    }
+
+    .about-info {
+        flex-basis: 56%;
+    }
+
+    p {
+        font-size: 14px;
+        line-height: 22px;
+        letter-spacing: .4px;
+        margin: 20px 0;
+        font-weight: 300;
+        color: #413d4b;
+    }
+
+    .about-title {
+        font-family: 'Playfair Display';
+        font-weight: 700;
+        font-size: 22px;
+        line-height: 28px;
+        letter-spacing: 1.1px;
+    }
+
+    a {
+        @include btn()
+    }
+}
