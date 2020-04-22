@@ -1,0 +1,87 @@
+.team {
+    padding-top: 50px;
+    padding-bottom: 70px;
+    background: url('../img/bg3.jpg') center center no-repeat;
+    background-size: cover;
+
+    .team-title {
+        font-size: 22px;
+        font-weight: 700;
+        line-height: 26px;
+        letter-spacing: 1.1px;
+        color: $white;
+        text-transform: uppercase;
+    }
+
+    p {
+        font-size: 14px;
+        letter-spacing: 1.05px;
+        margin: 15px 0;
+        text-align: center;
+        color: #f9f9f9;
+        font-family: 'Playfair Display';
+    }
+
+    .team-divider {
+        @include divider($color-line: #655c80)
+    }
+
+    .team-block {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        margin-top: 50px;
+        margin-bottom: 70px;
+    }
+
+    .team-element {
+        flex-basis: 23.5%;
+
+        .team-name {
+            font-weight: 900;
+            font-size: 14px;
+            color: #fff;
+            letter-spacing: .7px;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-family: 'Roboto';
+            font-size: 13px;
+            color: rgba($color: #fafafa, $alpha: .7);
+            font-weight: 300;
+            text-transform: uppercase;
+            margin-top: 10px;
+            margin-bottom: 25px;
+            letter-spacing: normal;
+        }
+    }
+
+    .team-img {
+        img {
+            display: block;
+            max-width: 100%;
+        }
+    }
+
+    .team-info {
+        border: 1px solid;
+        border-color: rgba($color: #7a788d, $alpha: .5);
+    }
+
+    .join-us {
+        font-family: 'Roboto';
+        font-size: 14px;
+        font-weight: 300;
+        color: #f3f3f3;
+        letter-spacing: .7px;
+        margin: 30px 0;
+    }
+    a {
+        @include btn() {
+            width: 140px;
+        };
+    }
+}
