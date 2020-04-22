@@ -1,0 +1,65 @@
+.portfolio {
+    margin: 70px 0;
+
+    .portfolio-wrap {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .portfolio-title {
+        font-family: 'Playfair Display';
+        font-weight: 700;
+        font-size: 22px;
+        letter-spacing: 1.1px;
+        color: #413d4b;
+    }
+
+    .portfolio-all {
+        font-weight: 300;
+        font-size: 14px;
+        letter-spacing: .7px;
+        color: #413d4b;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        
+        .portfolio-icon {
+            width: 13px;
+            height: 13px;
+            fill: $black;
+        }
+    }
+    .portfolio-block {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        max-width: 1600px;
+        margin: 70px auto;
+    }
+
+    .portfolio-element {
+        flex-basis: 16.667%;
+
+        a {
+            display: block;
+            text-decoration: none;
+
+            img {
+                display: block;
+                max-width: 100%;
+            }
+        }
+    }
+    
+    .portfolio-btn {
+        text-align: center;
+
+        a {
+            @include btn() {
+                width: 140px;
+            }    
+        }
+    }
+}
