@@ -1,0 +1,15 @@
+.reviews {
+    padding: 70px 0;
+    background: url('../img/bg4.jpg') center center no-repeat;
+    background-size: cover;
+
+    .reviews-wrap {
+        text-align: center;
+    }
+
+    .reviews-icon {
+        width: 32px;
+        height: 26px;
+        fill: $white;
+    }
+}

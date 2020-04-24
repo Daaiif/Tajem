@@ -1,0 +1,91 @@
+.reviews-slider {
+    
+    .slider-item {
+        margin: 45px auto;
+        max-width: 775px;
+    }
+
+    p {
+        color: $white;
+    }
+
+    .autor-text {
+        font-family: 'Playfair Display';
+        font-size: 16px;
+        line-height: 26px;
+        letter-spacing: .4px;
+        opacity: .85;
+        margin-bottom: 40px;
+    }
+
+    .autor-name {
+        font-weight: 900;
+        font-size: 14px;
+        line-height: 22px;
+        letter-spacing: .7px;
+    }
+
+    .autor-position {
+        font-size: 13px;
+        line-height: 22px;
+        font-weight: 300;
+        opacity: .7;
+    }
+
+    .owl-nav {
+        button.owl-prev, button.owl-next {
+            width: 11px;
+            height: 21px;
+            border: none;
+            box-shadow: none;
+            position: absolute;
+            bottom: 15px;
+
+            &:focus {
+                outline: none;
+            }
+        }
+        button.owl-prev {
+            background: url('../img/button-left.png') 0 0 no-repeat;
+            left: 275px;
+        }
+        button.owl-next {
+            background: url('../img/button-right.png') 0 0 no-repeat;
+            right: 275px;
+        }
+    }
+
+    .owl-dots {
+        .owl-dot {
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            margin: 0 10px;
+            &:nth-child(1) {
+                background: url('../img/autor-img.png');
+            }
+            &:nth-child(2) {
+                background: url('../img/autor-img1.png');
+            }
+            &:nth-child(3) {
+                background: url('../img/autor-img2.png') center center no-repeat;
+                background-size: cover;
+            }
+            &:nth-child(4) {
+                background: url('../img/autor-img3.png');
+            }
+            &:nth-child(5) {
+                background: url('../img/autor-img4.png');
+            }
+
+            &:focus {
+                outline: none;
+            }
+        }
+        .owl-dot.active {
+            transform: scale(1.5, 1.5);
+            transition-duration: 500ms;
+            
+        }
+    }
+}
